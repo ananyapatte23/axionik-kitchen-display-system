@@ -1,0 +1,148 @@
+import { Order } from '../types';
+
+export const INITIAL_ORDERS: Order[] = [
+  {
+    id: 'ord-101',
+    orderNumber: '#101',
+    orderType: 'DINE IN',
+    table: 'TABLE 15',
+    tableDetails: 'Main Dining Hall • Zone A • 4 Seats',
+    status: 'NEW ORDER',
+    kitchenSection: 'Assembly Counter',
+    estimatedPrepMinutes: 15,
+    createdAt: Date.now() - 155000,
+    items: [
+      {
+        id: 'item-1',
+        name: 'McChicken Burger',
+        quantity: 2,
+        customizations: ['No Onions', 'Extra Mayo'],
+        isCompleted: false,
+      },
+      {
+        id: 'item-2',
+        name: 'Large Fries',
+        quantity: 1,
+        customizations: ['Extra Salt on Fries'],
+        isCompleted: false,
+      },
+      {
+        id: 'item-3',
+        name: 'Coke',
+        quantity: 1,
+        customizations: ['Less Ice in Coke'],
+        isCompleted: false,
+      },
+    ],
+  },
+  {
+    id: 'ord-102',
+    orderNumber: '#102',
+    orderType: 'DINE IN',
+    table: 'TABLE 08',
+    tableDetails: 'Window Section • Table 08 • 2 Guests',
+    status: 'COOKING',
+    kitchenSection: 'Grill & Assembly',
+    statusDetail: 'Cooking in Progress',
+    estimatedPrepMinutes: 10,
+    createdAt: Date.now() - 388000,
+    items: [
+      {
+        id: 'item-4',
+        name: 'McVeggie Burger',
+        quantity: 1,
+        customizations: ['Extra Cheese'],
+        isCompleted: true,
+      },
+      {
+        id: 'item-5',
+        name: 'McFlurry Oreo',
+        quantity: 1,
+        customizations: ['Extra Chocolate Syrup'],
+        isCompleted: false,
+      },
+    ],
+  },
+  {
+    id: 'ord-103',
+    orderNumber: '#103',
+    orderType: 'TAKE AWAY',
+    table: 'TAKEAWAY COUNTER',
+    tableDetails: 'Express Pickup Rack #3 • Bag Ready',
+    status: 'READY',
+    kitchenSection: 'Serving Pass',
+    statusDetail: 'Waiting For Pickup',
+    estimatedPrepMinutes: 8,
+    createdAt: Date.now() - 582000,
+    items: [
+      {
+        id: 'item-6',
+        name: 'McAloo Tikki Burgers',
+        quantity: 3,
+        customizations: [],
+        isCompleted: true,
+      },
+      {
+        id: 'item-7',
+        name: 'Coke',
+        quantity: 2,
+        customizations: [],
+        isCompleted: true,
+      },
+    ],
+  },
+];
+
+export const SAMPLE_SIMULATOR_ORDERS: Partial<Order>[] = [
+  {
+    orderNumber: '#104',
+    orderType: 'DINE IN',
+    table: 'TABLE 04',
+    tableDetails: 'Center Floor • Booth 4 • 4 Guests',
+    kitchenSection: 'Assembly Counter',
+    estimatedPrepMinutes: 12,
+    items: [
+      { id: 'sim-1', name: 'Triple Cheese Crisp Burger', quantity: 2, customizations: ['No Pickles', 'Extra Sauce'] },
+      { id: 'sim-2', name: 'Crispy Nuggets (9pcs)', quantity: 1, customizations: ['Honey Mustard Dip'] },
+      { id: 'sim-3', name: 'Iced Latte', quantity: 2, customizations: ['Oat Milk'] },
+    ],
+  },
+  {
+    orderNumber: '#105',
+    orderType: 'TAKE AWAY',
+    table: 'TAKEAWAY COUNTER',
+    tableDetails: 'Front Counter Pickup • Order Bagged',
+    kitchenSection: 'Grill & Fryer',
+    estimatedPrepMinutes: 10,
+    items: [
+      { id: 'sim-4', name: 'Double Spicy Chicken Wrap', quantity: 1, customizations: ['Extra Jalapenos'] },
+      { id: 'sim-5', name: 'Curly Fries', quantity: 1, customizations: ['Well Done'] },
+      { id: 'sim-6', name: 'Sprite', quantity: 1, customizations: ['No Ice'] },
+    ],
+  },
+  {
+    orderNumber: '#106',
+    orderType: 'DINE IN',
+    table: 'TABLE 19',
+    tableDetails: 'Outdoor Terrace • Table 19 • 3 Guests',
+    kitchenSection: 'Beverages & Dessert',
+    estimatedPrepMinutes: 6,
+    items: [
+      { id: 'sim-7', name: 'Chocolate Fudge Sundae', quantity: 2, customizations: ['Extra Nuts'] },
+      { id: 'sim-8', name: 'Strawberry Milkshake', quantity: 1, customizations: [] },
+    ],
+  },
+  {
+    orderNumber: '#107',
+    orderType: 'DINE IN',
+    table: 'TABLE 02',
+    tableDetails: 'Main Dining • Table 02 • 2 Guests',
+    kitchenSection: 'Assembly Counter',
+    estimatedPrepMinutes: 14,
+    items: [
+      { id: 'sim-9', name: 'Filet-O-Fish Burger', quantity: 2, customizations: ['Extra Tartar Sauce'] },
+      { id: 'sim-10', name: 'Medium Fries', quantity: 2, customizations: ['No Salt'] },
+      { id: 'sim-11', name: 'Fanta Orange', quantity: 2, customizations: [] },
+    ],
+  },
+];

@@ -1,0 +1,6 @@
+{
+  "name": "AXIONIK Kitchen Display System",
+  "description": "Wall-mounted commercial restaurant Kitchen Display System (KDS) for real-time order management, kitchen station workflows, item prep checkboxes, and status tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
